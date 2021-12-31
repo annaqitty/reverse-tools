@@ -48,9 +48,26 @@ def RevIP():
 	input_save = input(tai+'[!] Save Result .txt > ')
 	print(batas)
 
-	
-	open_ip = open(input_list,"r").read().splitlines()
-	for ip in open_ip:
+	kosong = []
+	op = open(input_list,"r").read().splitlines()
+	for wans in op:
+		if wans not in kosong:
+			kosong += [wans]
+		else:
+			pass
+	open(input_list,"w").write("")
+	for wans in kosong:
+		open(input_list,"a").write(wans+"\n")
+		
+	dom_ip = open(input_list,'r').read().splitlines()
+	for ips in dom_ip:
+		try:
+			ke_ip = gethostbyname(ips)
+			savefile = open('chua.txt','a').write(ke_ip+'\n')
+		except:
+			pass
+	open_ip = open('chua.txt','r').read().splitlines()
+	for ip in open_ip:	
 		try:
 			req = requests.get('https://sonar.omnisint.io/reverse/'+ip,headers=Agent).text
 			parse = json.loads(req)
@@ -60,6 +77,7 @@ def RevIP():
 				open(input_save,'a').write(hapus+'\n')
 		except:
 			print(f'{merah}[#] Reverse {ip} > Error')
+	os.remove('result_ip.txt')
 	print(batas)
 t = threading.Thread(target=RevIP)
 t.start()
