@@ -77,7 +77,7 @@ def RevIP():
 				open(input_save,'a').write(hapus+'\n')
 		except:
 			print(f'{merah}[#] Reverse {ip} > Error')
-	os.remove('result_ip.txt')
+	os.remove('chua.txt')
 	print(batas)
 t = threading.Thread(target=RevIP)
 t.start()
