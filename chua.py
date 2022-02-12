@@ -23,7 +23,7 @@ def RevIP():
 	
 	fakeUA = UserAgent()
 	
-	Agent = {'User-Agent':'fakeUA'}
+	Agent = {'User-Agent':'fakeUA.firefox'}
 	
 	print(hijau)
 	print('''
