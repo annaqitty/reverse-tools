@@ -4,7 +4,7 @@
 Clone This Repository In Your Terminal<p>
 <li>git clone https://github.com/annaqitty/reverse-tools<p></li>
 <li>cd reverse-tools<p></li>
-<li>pip install -r install.txt<p></li>
+<li>pip3 install -r install.txt<p></li>
 
 <H2>Tested On.</H2><p>
 <li>Ubuntu 18.04<p></li>
