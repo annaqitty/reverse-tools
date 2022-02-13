@@ -23,7 +23,7 @@ def RevIP():
 	
 	fakeUA = UserAgent()
 	
-	Agent = {'User-Agent':'fakeUA.random'}
+	Agent = {'User-Agent':'fakeUA'}
 	
 	print(hijau)
 	print('''
@@ -33,7 +33,7 @@ def RevIP():
      o|* *|o  ║║╚╣╔╗║╚╝║╩║║
       \===/   ║╚═╩╝╚╩══╩╩╝║
        |||    ╚═══════════╝
-       |||
+       |||  R.E.V.E.R.S.E +++ T.O.O.L.S
        |||    ╔═╦═╦╦═╦╦═╗╔═╦╦══╦══╦╦╗
        |||    ║╩║║║║║║║╩║║╚║╠╗╔╩╗╔╩╗║
     ___|||___ ╚╩╩╩═╩╩═╩╩╝╚═╩╝╚╝ ╚╝ ╚╝
